@@ -1,0 +1,275 @@
+/* Roboto Fonts */
+@font-face {
+  font-family: Roboto;
+  src: url("roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("roboto/Roboto-Bold.ttf");
+}
+
+/* Main */
+body {
+  background-color: black;
+  background-image: url("https://DreamyCecil.github.io/Moon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Roboto;
+  color: white;
+}
+
+h1 {
+  font-family: RobotoBold;
+}
+
+/* Character */
+.charTopPos {
+  position: relative;
+  display: inline-block;
+}
+
+.charTop {
+  top: -200px;
+  left: 48px;
+  
+  position: absolute;
+  
+  -webkit-transition: top 1s;
+  transition: top 1s;
+}
+
+.charTop:hover {
+  top: -160px;
+}
+
+/* File header picture */
+.fileLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+/* Gallery pictures */
+.galleryPic {
+  width: 100%;
+}
+
+/* Image containers */
+.oneImage {
+  float: left;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.imageRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#picID {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#picID:hover {
+  opacity: 0.75;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 48px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  
+  -webkit-animation-name: modalOpacityAnim;
+  -webkit-animation-duration: 0.3s;
+  animation-name: modalOpacityAnim;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes modalOpacityAnim {
+  from { background-color: rgba(0, 0, 0, 0); } 
+  to { background-color: rgba(0, 0, 0, 0.9); }
+}
+
+@keyframes modalOpacityAnim {
+  from { background-color: rgba(0, 0, 0, 0); } 
+  to { background-color: rgba(0, 0, 0, 0.9); }
+}
+
+/* Modal Content */
+.modalContent {
+  margin: auto;
+  display: block;
+  max-width: 1280px;
+  max-height: 768px;
+  
+  -webkit-animation-name: picAnim;
+  -webkit-animation-duration: 0.5s;
+  animation-name: picAnim;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes picAnim {
+  from { transform:translate(0px, 100px) } 
+  to { transform:translate(0px, 0px) }
+}
+
+@keyframes picAnim {
+  from { -webkit-transform:translate(0px, 100px) } 
+  to { -webkit-transform:translate(0px, 0px) }
+}
+
+/* Caption of modal image */
+#modalCaption {
+  margin: auto;
+  display: block;
+  max-width: 1280px;
+  text-align: center;
+  color: #BBD1EB;
+  padding: 10px 0;
+  height: 150px;
+  font-family: RobotoBold;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Links */
+a:link {
+  color: #BBD1EB; background-color: transparent; text-decoration: none;
+}
+a:visited {
+  color: #BBD1EB; background-color: transparent; text-decoration: none;
+}
+a:hover {
+  color: #D2E1F2; background-color: transparent; text-decoration: underline;
+}
+a:active {
+  color: white; background-color: transparent; text-decoration: none;
+}
+
+.accomplishLink:link {
+  color: #4F4F4F; background-color: transparent; text-decoration: none;
+}
+.accomplishLink:visited {
+  color: #4F4F4F; background-color: transparent; text-decoration: none;
+}
+.accomplishLink:hover {
+  color: #7F7F7F; background-color: transparent; text-decoration: underline;
+}
+.accomplishLink:active {
+  color: #3F3F3F; background-color: transparent; text-decoration: none;
+}
+
+.accomplishColumn {
+  border: 1px solid #BBD1EB;
+  display: inline-block;
+  width: 48%;
+  
+  margin: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  
+  text-align: justify;
+  font-family: Roboto;
+}
+
+.accomplishRow {
+  padding: 0;
+  position: relative;
+  top: 12px;
+  width: 850px;
+  
+  margin: auto;
+}
+
+.accomplishRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.siteSeparator {
+  width: 840px;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+.siteBlock {
+  border: 1px solid #BBD1EB;
+  background-color: rgba(31, 31, 31, 0.7);
+  
+  padding: 12px;
+  position: relative;
+  top: 16px;
+  width: 800px;
+  
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  
+  text-align: justify;
+  font-family: Roboto;
+}
+
+/* Download Button */
+.downloadBut {
+  background-image: linear-gradient(#D2E1F2, #BBD1EB);
+  border: none;
+  padding: 16px 32px;
+  position: relative;
+  display: inline-block;
+  
+  margin: auto;
+  margin-top: 8px;
+  
+  color: black;
+  font-family: Roboto;
+  font-size: 20px;
+  cursor: pointer;
+}
+.downloadBut:hover {
+  background-image: linear-gradient(#DAE9FA, #C3D9F3);
+}
+
+/* Top dropdown menu */
+.topDropMenuBut {
+  background-image: linear-gradient(#D2E1F2, #BBD1EB);
+  color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
+  font-family: Consolas, monospace;
+  cursor: pointer;
+}
+.topDropMenu { position: relative; display: inline-block; }
+
+.topDropMenuContent {
+  display: none; position: absolute;
+  background-color: #EEEEEE;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.topDropMenuContent a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
+/* Hovering */
+.topDropMenuContent a:hover { background-color: #DDDDDD; }
+.topDropMenu:hover .topDropMenuContent { display: block; }
+.topDropMenu:hover .topDropMenuBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
