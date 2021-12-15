@@ -178,6 +178,36 @@ a:active {
   color: #3F3F3F; background-color: transparent; text-decoration: none;
 }
 
+.accomplishColumn {
+  border: 1px solid #BBD1EB;
+  display: inline-block;
+  width: 48%;
+  
+  margin: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  
+  text-align: justify;
+  font-family: Roboto;
+}
+
+.accomplishRow {
+  padding: 0;
+  position: relative;
+  top: 12px;
+  width: 850px;
+  
+  margin: auto;
+}
+
+.accomplishRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .siteSeparator {
   width: 840px;
   margin: auto;
