@@ -217,7 +217,7 @@ a:active {
 }
 .siteBlock {
   border: 1px solid #BBD1EB;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(31, 31, 31, 0.7);
   
   padding: 12px;
   position: relative;
