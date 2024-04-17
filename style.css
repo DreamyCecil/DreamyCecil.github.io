@@ -252,100 +252,24 @@ a:active {
   background-image: linear-gradient(#DAE9FA, #C3D9F3);
 }
 
-/* Main Page dropdown menu */
-.mainBut {
+/* Top dropdown menu */
+.topDropMenuBut {
   background-image: linear-gradient(#D2E1F2, #BBD1EB);
   color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
   font-family: Consolas, monospace;
   cursor: pointer;
 }
-.mainDrop { position: relative; display: inline-block; }
-/* Hovering */
-.mainDrop:hover .mainBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
+.topDropMenu { position: relative; display: inline-block; }
 
-/* Serious Sam dropdown menu */
-.samBut {
-  background-image: linear-gradient(#D2E1F2, #BBD1EB);
-  color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-  font-family: Consolas, monospace;
-  cursor: pointer;
-}
-.samDrop { position: relative; display: inline-block; }
-
-.sam-content {
+.topDropMenuContent {
   display: none; position: absolute;
   background-color: #EEEEEE;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-.sam-content a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
+.topDropMenuContent a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
 /* Hovering */
-.sam-content a:hover { background-color: #DDDDDD; }
-.samDrop:hover .sam-content { display: block; }
-.samDrop:hover .samBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
-
-/* Other Projects dropdown menu */
-.projBut {
-  background-image: linear-gradient(#D2E1F2, #BBD1EB);
-  color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-  font-family: Consolas, monospace;
-  cursor: pointer;
-}
-.projDrop { position: relative; display: inline-block; }
-
-.proj-content {
-  display: none; position: absolute;
-  background-color: #EEEEEE;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.proj-content a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
-/* Hovering */
-.proj-content a:hover { background-color: #DDDDDD; }
-.projDrop:hover .proj-content { display: block; }
-.projDrop:hover .projBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
-
-/* Digital Media dropdown menu */
-.mediaBut {
-  background-image: linear-gradient(#D2E1F2, #BBD1EB);
-  color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-  font-family: Consolas, monospace;
-}
-.mediaDrop { position: relative; display: inline-block; }
-
-.media-content {
-  display: none; position: absolute;
-  background-color: #EEEEEE;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.media-content a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
-/* Hovering */
-.media-content a:hover { background-color: #DDDDDD; }
-.mediaDrop:hover .media-content { display: block; }
-.mediaDrop:hover .mediaBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
-
-/* Links dropdown menu */
-.linkBut {
-  background-image: linear-gradient(#D2E1F2, #BBD1EB);
-  color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-  font-family: Consolas, monospace;
-  cursor: pointer;
-}
-.linkDrop { position: relative; display: inline-block; }
-
-.link-content {
-  display: none; position: absolute;
-  background-color: #EEEEEE;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.link-content a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
-/* Hovering */
-.link-content a:hover { background-color: #DDDDDD; }
-.linkDrop:hover .link-content { display: block; }
-.linkDrop:hover .linkBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
+.topDropMenuContent a:hover { background-color: #DDDDDD; }
+.topDropMenu:hover .topDropMenuContent { display: block; }
+.topDropMenu:hover .topDropMenuBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
