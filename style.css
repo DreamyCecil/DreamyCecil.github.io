@@ -33,7 +33,7 @@ h1 {
 
 .charTop {
   top: -200px;
-  left: 48px;
+  left: 80px;
   
   position: absolute;
   
@@ -255,7 +255,7 @@ a:active {
 /* Top dropdown menu */
 .topDropMenuBut {
   background-image: linear-gradient(#D2E1F2, #BBD1EB);
-  color: black; padding: 16px; font-size: 16px; min-width: 256px; border: none;
+  color: black; padding: 16px; font-size: 16px; min-width: 264px; border: none;
   font-family: Consolas, monospace;
   cursor: pointer;
 }
@@ -264,7 +264,7 @@ a:active {
 .topDropMenuContent {
   display: none; position: absolute;
   background-color: #EEEEEE;
-  min-width: 160px;
+  min-width: 264px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
