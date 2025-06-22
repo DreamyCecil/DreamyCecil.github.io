@@ -255,7 +255,7 @@ a:active {
 /* Top dropdown menu */
 .topDropMenuBut {
   background-image: linear-gradient(#D2E1F2, #BBD1EB);
-  color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
+  color: black; padding: 16px; font-size: 16px; min-width: 256px; border: none;
   font-family: Consolas, monospace;
   cursor: pointer;
 }
