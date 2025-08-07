@@ -10,7 +10,7 @@ for (var iImg = 0; iImg < aImages.length; iImg++) {
   var pCaption = document.getElementById("modalCaption");
 
   pPicture.onclick = function(){
-    pModal.style.display = "block";
+    pModal.style.display = "flex";
     pModalPic.src = this.src;
     pCaption.innerHTML = this.alt;
   }
