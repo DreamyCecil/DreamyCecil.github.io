@@ -1,18 +1,18 @@
 /* Roboto Fonts */
 @font-face {
   font-family: Roboto;
-  src: url("roboto/Roboto-Regular.ttf");
+  src: url("/roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: RobotoBold;
-  src: url("roboto/Roboto-Bold.ttf");
+  src: url("/roboto/Roboto-Bold.ttf");
 }
 
 /* Main */
 body {
   background-color: black;
-  background-image: url("https://DreamyCecil.github.io/Moon.png");
+  background-image: url("/Moon.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -61,6 +61,12 @@ h1 {
 /* Image containers */
 .oneImage {
   float: left;
+  padding: 4px;
+  box-sizing: border-box;
+}
+.centeredImage {
+  display: block;
+  margin: auto;
   padding: 4px;
   box-sizing: border-box;
 }
